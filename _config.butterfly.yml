@@ -1,0 +1,241 @@
+# Butterfly 主题配置文件
+
+# 导航菜单
+menu:
+  首页: / || fas fa-home
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+  关于: /about/ || fas fa-heart
+
+# 网站图标
+favicon: /favicon.ico
+
+# 代码高亮主题
+highlight_theme: mac
+
+# 主题颜色配置（文艺温暖风格）
+theme_color:
+  enable: true
+  main: "#49B1F5"
+  paginator: "#00c4b6"
+  button_hover: "#FF7242"
+  text_selection: "#00c4b6"
+  link_color: "#99a9bf"
+  meta_color: "#858585"
+  hr_color: "#A4D8FA"
+  code_foreground: "#F47466"
+  code_background: "rgba(27, 31, 35, .05)"
+  toc_color: "#00c4b6"
+  blockquote_padding_color: "#49B1F5"
+  blockquote_background_color: "#49B1F5"
+
+# 顶部图
+index_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-cover.jpg
+default_top_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-cover.jpg
+
+# 文章元信息
+post_meta:
+  page:
+    date_type: both
+    date_format: relative
+    categories: true
+    tags: true
+  post:
+    date_type: both
+    date_format: relative
+    categories: true
+    tags: true
+
+# 文章版权
+post_copyright:
+  enable: true
+  decode: false
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# 代码块设置
+code_word_wrap: true
+
+# 文章推荐
+related_post:
+  enable: true
+  limit: 6
+  date_type: created
+
+# 文章锚点
+anchor:
+  button:
+    top: 50%
+    right: 16px
+    icon: fas fa-anchor
+
+# 图片懒加载
+lazyload:
+  enable: true
+  field: site
+  placeholder: /img/loading.gif
+  blurredIn: false
+
+# 页脚设置
+footer:
+  owner:
+    enable: true
+    since: 2026
+  custom_text: <p>记录生活，分享美好</p>
+  copyright: true
+
+# 右下角按钮
+rightside:
+  enable: true
+  readmode: true
+  translate: false
+  aside: true
+  font_size: true
+
+# 侧边栏设置
+aside:
+  enable: true
+  position: right
+  card_author: true
+  card_announcement: true
+  card_recent_post: true
+  card_categories: true
+  card_tags: true
+  card_archives: true
+  card_webinfo: true
+
+# 搜索功能
+search:
+  enable: true
+  path: search.xml
+  field: post
+  content: true
+
+# 评论系统（可选）
+comments:
+  use: false
+  lazyload: false
+  count: false
+
+# 网站背景
+background: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-cover.jpg
+
+# 打字效果
+typing_effect:
+  enable: true
+  hitShake: false
+
+# 看板娘
+fireworks:
+  enable: false
+
+# 背景特效
+canvas_ribbon:
+  enable: false
+
+# 鼠标点击效果
+click_heart:
+  enable: false
+
+# 文章页美化
+post_beautify:
+  enable: true
+  title_prefix_icon: '\f0c1'
+  title_prefix_icon_color: '#F47466'
+
+# 全局美化
+beautify:
+  enable: true
+  field: post
+  title_prefix_icon: '\f0c1'
+
+# 注入自定义代码
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/cute-style.css">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+  bottom:
+    - <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    - <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    - <script src="/js/live2d-message.js"></script>
+    - |
+      <meting-js 
+        id="611173457"
+        lrc-type="0"
+        server="netease"
+        order="random"
+        type="playlist"
+        fixed="true"
+        autoplay="false"
+        list-folded="true">
+      </meting-js>
+      <style>
+      .aplayer.aplayer-fixed {
+        z-index: 9999;
+      }
+      .aplayer.aplayer-fixed .aplayer-body {
+        background: rgba(255, 182, 193, 0.95);
+        border: 2px solid #FFB6C1;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(255, 182, 193, 0.3);
+      }
+      .aplayer.aplayer-fixed .aplayer-miniswitcher {
+        background: #FF69B4;
+        border-radius: 0 10px 10px 0;
+      }
+      .aplayer.aplayer-fixed .aplayer-miniswitcher:hover {
+        background: #FFB6C1;
+      }
+      .aplayer .aplayer-body .aplayer-info {
+        border-top: 2px solid #FFB6C1;
+      }
+      .aplayer .aplayer-body .aplayer-info .aplayer-music {
+        color: #8B4513;
+      }
+      .aplayer .aplayer-body .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar {
+        background: rgba(255, 182, 193, 0.3);
+      }
+      .aplayer .aplayer-body .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {
+        background: rgba(255, 182, 193, 0.5);
+      }
+      .aplayer .aplayer-body .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
+        background: #FF69B4;
+      }
+      .aplayer .aplayer-body .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
+        background: #FF69B4;
+        border: 2px solid white;
+      }
+      .aplayer .aplayer-body .aplayer-info .aplayer-controller .aplayer-time {
+        color: #8B4513;
+      }
+      .aplayer .aplayer-body .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon:hover path {
+        fill: #FF69B4;
+      }
+      .aplayer .aplayer-body .aplayer-pic {
+        border-radius: 10px 0 0 10px;
+      }
+      .aplayer .aplayer-list {
+        background: rgba(255, 255, 255, 0.95);
+        border: 2px solid #FFB6C1;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 5px 20px rgba(255, 182, 193, 0.3);
+      }
+      .aplayer .aplayer-list ol li {
+        border-top: 1px solid rgba(255, 182, 193, 0.3);
+        color: #8B4513;
+      }
+      .aplayer .aplayer-list ol li:hover {
+        background: rgba(255, 182, 193, 0.2);
+      }
+      .aplayer .aplayer-list ol li.aplayer-list-light {
+        background: rgba(255, 182, 193, 0.3);
+      }
+      .aplayer .aplayer-list ol li .aplayer-list-index {
+        color: #FF69B4;
+      }
+      .aplayer .aplayer-list ol li .aplayer-list-author {
+        color: #8B4513;
+        opacity: 0.6;
+      }
+      </style>
+  title_prefix_icon_color: '#F47466'
